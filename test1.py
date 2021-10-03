@@ -35,23 +35,27 @@ bullet.dy = -4
 
 # defines a function
 def fightera_up():
+    global y
     y = fighter_a.ycor()
     y+=20
     fighter_a.sety(y)
     return y
 
 def fightera_down():
+    global y
     y = fighter_a.ycor()
     y-=20
     fighter_a.sety(y)
     return y
 
 def fightera_right():
+    global x
     x = fighter_a.xcor()
     x+=20
     fighter_a.setx(x)
     return x
 def fightera_left():
+    global x
     x = fighter_a.xcor()
     x-=20
     fighter_a.setx(x)
